@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GOKULRAJ - Front-End Developer </title>
+    <link rel="icon" type="image/x-icon" href="photo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f9532d;
+            color: #fff;
+        }
+
+        #resumeBtn {
+            background-color: #fff;
+            color: #000000;
+            transition: background-color 0.3s ease;
+        }
+
+        #resumeBtn:hover {
+            background-color: #f9532d;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Home Section -->
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#home">GOKULRAJ</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="#home" class="active" style="--navAni:1">Home</a></li>
+                <li><a href="#about" style="--navAni:2">About</a></li>
+                <li><a href="#skills" style="--navAni:3">Skills</a></li>
+                <li><a href="#services" style="--navAni:4">Services</a></li>
+                <li><a href="#projects" style="--navAni:4">Projects</a></li>
+                <li><a href="#contact" style="--navAni:5">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="container">
+        <div class="main">
+            <div class="images">
+                <img src="photo.jpg" alt class="img-w">
+                <span class="bg-effect-1">
+                    <span class="bg-effect-1"></span>
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1 style="color:#f9532d;">R GOKULRAJ</h1>
+                <p>As a professional Front-End Web Developer, my primary
+                    objective is to assist and satisfy both local and global
+                    clients through innovative web development solutions.
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/gokulraj02/" style="--socialAni:1"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/gokulrajr07" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                    <a href="https://x.com/home" style="--socialAni:4"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <br>
+                <button onclick="scrollToContact()">Contact Me</button>
+                <button id="resumeBtn">Resume</button>
+                <script>
+
+                    function scrollToContact() {
+                        var contactSection = document.getElementById("contact");
+                        contactSection.scrollIntoView({ behavior: "smooth" });
+                    }
+
+
+                    document.getElementById("resumeBtn").addEventListener("click", function () {
+
+                        window.open('https://drive.google.com/file/d/1He_L1-nFkrmq5C5Bfv23bk6XblPOMsV6/view?usp=sharing', '_blank');
+
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <br>
+        <h1 class="t-center my-2 t-white f-2">About Me</h1><br>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <img src="img -3.jpg" alt style="width: 50%; height: 100%; ">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">R GOKULRAJ</h1>
+                    <p class="t-white1 poppins">Aspiring software developer
+                        dedicated to delivering projects punctually and
+                        enhancing user experiences through innovative design
+                        and functionality. Proficient in creating engaging
+                        static websites and actively acquiring skills in
+                        backend technologies for developing dynamic web
+                        solutions. Seeking an opportunity to contribute my
+                        expertise and passion for continuous improvement to
+                        dynamic software development team.</p>
+                    <br>
+                    <br>
+                    <a class="btn live poppins" id="hireme" href="#contact">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <br>
+        <br><br>
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <br><br>
+        <h1 class="t-center my-2 t-white f-2">Programming Skills</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="skills/html.svg" alt>
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/css.svg" alt>
+                <h2>CSS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/js.svg" alt>
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/20220125121206!React-icon.svg.png" alt>
+                <h2>ReactJS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/226002.webp" alt>
+                <h2>Java Programming</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/72I5Gx01.svg" alt>
+                <h2>MySQL</h2>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="t-center my-2 t-white f-2">Other Skills</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="skills/canva.svg" alt>
+                <h2>Canva</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/git.svg" alt>
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/ms office.svg" alt>
+                <h2>MS Office</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/ui design.svg" alt>
+                <h2>UI design</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/resonsive design.svg" alt>
+                <h2>Responsive design</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/project management tools.svg " alt>
+                <h2>Project Management<br>Tools</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/computer literacy.svg" alt>
+                <h2>Computer Literacy</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/communication.svg" alt>
+                <h2>Strong<br>Communication</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/team work.svg" alt>
+                <h2>Collaboration &<br> Teamwork</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/problem solving.svg" alt>
+                <h2>Problem-Solving</h2>
+            </div>
+            <div class="skill-card">
+                <img src="skills/time management.svg" alt>
+                <h2>Time Management</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <br>
+        <br><br>
+        <h1 class=" t-center my-2 t-white f-2">Services</h1>
+        <br><br>
+        <div class="services-container flex s-center">
+            <div class="test-item flex f-col items-center">
+                <img src="developer.png" alt>
+                <h1 class="t-white poppins">Web Designer</h1>
+                <p class="t-white poppins">Web designing is evolving
+                    rapidly. Every startup and business needs their own
+                    website. As my passion, I can help you build a clean and
+                    fast website for your startup or business.</p>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="web.png" alt>
+                <h1 class="t-white poppins">Web App Interface
+                    Development</h1>
+                <p class="t-white poppins">Customers are less likely to
+                    return to a website following a negative experience.
+                    Prioritizing usability, I craft robust web apps with
+                    pleasing interfaces, ensuring a positive user experience
+                    and repeated visits.</p>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="social-media-management.png" alt>
+                <h1 class="t-white poppins">Social Media Management</h1>
+                <p class="t-white poppins">Social media is the future of
+                    marketing, and I can help you develop brand awareness
+                    and increase customer loyalty by managing your social
+                    media handles effectively.</p>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="startup.png" alt>
+                <h1 class="t-white poppins">Growth Strategies</h1>
+                <p class="t-white poppins">As a web designer, I will help
+                    you grow your brand by providing creative and effective
+                    website design and development solutions, as well as
+                    developing and implementing strategic growth strategies
+                    for your brand and helping you to improve your search
+                    engine rankings.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <br>
+        <br><br>
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <br><br>
+        <div class="projects-container flex s-center">
+
+
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img src="To- Do.png" alt>
+                </div>
+                <h1 class="t-white poppins">To - Do App</h1>
+                <p class="t-white poppins">
+                    Designed and implemented task management app for
+                    efficient organization.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/To-Do-App" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/To-Do-App/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-one">
+                    <img src="Contact manager.png" alt>
+                </div>
+                <h1 class="t-white poppins">Contact Manager</h1>
+                <p class="t-white poppins">
+                    Developed a platform for effortless contact management
+                    and organization.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/Contact-Manager" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/Contact-Manager/" target="_blanks"
+                        class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-two">
+                    <img src="Profile Card (3).png" style=" height: 10rem;">
+                </div>
+
+                <h1 class="t-white poppins">Profile Card</h1>
+                <p class="t-white poppins">Created profile card with HTML,
+                    CSS, and JavaScript that provide a brief introduction
+                    about myself.</sp>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/Profile-Card" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/Profile-Card/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-three">
+                    <img src="Contact Form.png" alt>
+                </div>
+
+                <h1 class="t-white poppins">Contact Form</h1>
+                <p class="t-white poppins">I developed a contact form using
+                    HTML and CSS for easy communication with website
+                    visitors.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/Contact-Form" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/Contact-Form/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-three">
+                    <img src="login.png" alt>
+                </div>
+
+                <h1 class="t-white poppins">Attractive Login-Signup
+                    Form</h1>
+                <p class="t-white poppins">I designed a attractive form
+                    using HTML and CSS to facilitate user authentication on
+                    a website or application.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/Attractive-Login-Signup-Form" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/Attractive-Login-Signup-Form/" target="_blank"
+                        class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <div class="image-container p-three">
+                    <img src="movie.png" style=" height: 10rem;" alt>
+                </div>
+
+                <h1 class="t-white poppins">movie-Search-API</h1>
+                <p class="t-white poppins">I designed a movie-Search-API
+                    using HTML , CSS, JavaScript</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/gokulrajr07/movie-Search-API" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://gokulrajr07.github.io/movie-Search-API/" target="_blank"
+                        class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="m-b-1">
+        <br>
+        <br><br>
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <br><br>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form action=""  onsubmit="sendEmail();reset(); return false" id="submit-form">
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="message" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#services" class="poppinss">Services</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/gokulraj02/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/gokulrajr07" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="https://x.com/home" target="_blank">
+                <li><i class="fa-brands fa-twitter"></i></li>
+            </a>
+        </ul>
+        <div class="contact-info w-80 m-auto my-2">
+            <p class="poppins"><strong>Email:</strong>
+                <a href="" class="email-link">gokulrajrsmg09032002@gmail.com</a>
+            </p>
+            <p class="poppins"><strong>Phone:</strong> +91 9344138440</p>
+            <p class="poppins"><strong>Address:</strong> Dharmapuri,TamilNadu
+                India</p>
+        </div>
+    </footer>
+    <div class="footer-container">
+        <p class="t-center my-2 poppins"><strong>&copy; Copyright
+                2024<br>All Rights Reserved - <span class="cpy-black poppins">R GOKULRAJ</span></strong></p>
+    </div>
+
+     <!-- Form Submission -->
+     <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzfxdZgpal4W9-nxdnnu55PHtBWLq_HP7SP60fUwxEDvgiXtXXNhy684WRmrnL7kPMV_A/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

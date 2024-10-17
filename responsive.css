@@ -1,0 +1,143 @@
+.services-container,
+#home,
+.services-container {
+    flex-direction: column;
+}
+
+.services-container {
+    align-items: center;
+}
+
+.about-container {
+    flex-direction: column-reverse;
+}
+
+#home,
+.about-container,
+.services-container {
+    align-items: center;
+}
+
+.home-left,
+.home-right {
+    width: auto;
+}
+
+.services-container {
+    height: auto;
+}
+
+.about-left,
+.about-right {
+    width: auto;
+}
+
+.about-right img {
+    width: 70%;
+}
+
+.skills-left {
+    width: 80%;
+}
+
+.skills-right {
+    width: 80%;
+}
+
+.about-right {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: .5rem 1rem;
+
+}
+
+.test-item {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.test-item img {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 821px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card {
+        height: 32vw;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    #footer .res {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .res li {
+        margin-bottom: 1rem;
+    }
+
+    ul li a:hover {
+        color: #000000;
+    }
+
+    #bottom .bottom-nav {
+        padding: 0;
+    }
+}
+
+/* Media query for screens with a maximum width of 821px */
+@media screen and (max-width: 821px) {
+    section#home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        margin-top: -4rem;
+    }
+    
+    .images {
+        width: 50%; /* Make the image take the full width */
+        order: -1; /* Move the image to the top */
+    }
+
+    .main h1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px; /* Adjust the font size as needed */
+    }
+
+    .social {
+        display: flex;
+        justify-content: center; /* Center the social icons */
+        margin-top: 20px;
+    }
+
+    .social a {
+        margin: 0 10px; /* Adjust spacing between social icons */
+    }
+
+    .detail {
+        width: 100%; /* Make the detail div take the full width */
+        padding: 10px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
